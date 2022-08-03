@@ -11,9 +11,10 @@ class _CardOneState extends State<CardOne> {
 @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(color: Color.fromRGBO(245, 244, 244, 1), 
+      borderRadius: BorderRadius.circular(15)),
       height: 200,
       width: 390,
-      color: Color.fromRGBO(245, 244, 244, 1),
       child: Padding(
         padding: EdgeInsets.only(top: 8, left: 7),
         child: Column(
