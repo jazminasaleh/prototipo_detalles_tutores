@@ -5,14 +5,17 @@ class CardOne extends StatefulWidget {
   State<CardOne> createState() => _CardOneState();
 }
 
+enum Opciones { op1, op2, op3 }
+
 class _CardOneState extends State<CardOne> {
   bool _cardOneState = false;
-
-@override
+  Opciones _opcionSelect = Opciones.op1;
+  @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: Color.fromRGBO(245, 244, 244, 1), 
-      borderRadius: BorderRadius.circular(15)),
+      decoration: BoxDecoration(
+          color: Color.fromRGBO(245, 244, 244, 1),
+          borderRadius: BorderRadius.circular(15)),
       height: 200,
       width: 390,
       child: Padding(
@@ -41,7 +44,7 @@ class _CardOneState extends State<CardOne> {
                   activeColor: Colors.amber,
                   value: _cardOneState,
                   onChanged: (value) => setState(() {
-                    _cardOneState = value ?? true;
+                    _cardOneState = value ?? false;
                   }),
                 ),
                 Text('English'),
@@ -61,7 +64,7 @@ class _CardOneState extends State<CardOne> {
                   activeColor: Colors.amber,
                   value: _cardOneState,
                   onChanged: (value) => setState(() {
-                    _cardOneState = value ?? true;
+                    _cardOneState = value ?? false;
                   }),
                 ),
                 Text('Mathematics'),
@@ -81,7 +84,7 @@ class _CardOneState extends State<CardOne> {
                     activeColor: Colors.amber,
                     value: _cardOneState,
                     onChanged: (value) {
-                      _cardOneState = value ?? true;
+                      _cardOneState = value ?? false;
                       setState(() {});
                     }),
                 Text('Science'),
