@@ -11,11 +11,14 @@ class Parte1Nombre extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        FadeInImage(
-              placeholder: AssetImage('assets/loading.gif'),
-              image: NetworkImage('https://i.pinimg.com/736x/af/98/b9/af98b99eb27d4f0d8e07e24ec4cd36d8.jpg'),
-              //height: 150,
-              width: 120,
+        Padding(
+          padding: EdgeInsets.only(left: 14, top: 15),
+          child: FadeInImage(
+                placeholder: AssetImage('assets/loading.gif'),
+                image: NetworkImage('https://cdn2.salud180.com/sites/default/files/styles/medium/public/field/image/2020/03/estas_son_las_caracteristicas_que_vuelven_a_una_mujer_irresistible_segun_ellos.jpg'),
+                //height: 150,
+                width: 120,
+          ),
         ),
         Padding(
            padding: EdgeInsets.only(left:30,top: 35),
@@ -37,7 +40,7 @@ class Parte1Nombre extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(left: 40, top: 35),
+          padding: EdgeInsets.only(left: 35, top: 35),
           child: Column(
             children: [
               Icon(Icons.star, color: Colors.yellow.shade800,),

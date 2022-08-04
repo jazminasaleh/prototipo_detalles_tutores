@@ -23,14 +23,14 @@ class _CardTwoState extends State<CardTwo> {
             Row(
               children: const [
                 Text(
-                  '   Subject Exp.',
+                  '   Combined Pack.',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
                 ),
                 SizedBox(
-                  width: 141,
+                  width: 135,
                 ),
                 Text(
-                  'Pay per class',
+                  'Per Month',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
                 )
               ],
@@ -44,15 +44,15 @@ class _CardTwoState extends State<CardTwo> {
                     _cardOneState = value ?? true;
                   }),
                 ),
-                Text('English'),
+                Text('Science'),
                 SizedBox(
-                  width: 223,
+                  width: 220,
                 ),
                 Icon(
                   Icons.euro_symbol,
                   size: 17,
                 ),
-                Text('1300')
+                Text('1200')
               ],
             ),
             Row(
@@ -84,15 +84,15 @@ class _CardTwoState extends State<CardTwo> {
                       _cardOneState = value ?? true;
                       setState(() {});
                     }),
-                Text('Science'),
+                Text('English'),
                 SizedBox(
-                  width: 220,
+                  width: 225,
                 ),
                 Icon(
                   Icons.euro_symbol,
                   size: 17,
                 ),
-                Text('1200')
+                Text('1300')
               ],
             ),
           ],

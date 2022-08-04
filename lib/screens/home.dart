@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:parctica_educacionlinea/widgets/card%201.dart';
 import 'package:parctica_educacionlinea/widgets/card%202.dart';
+import 'package:parctica_educacionlinea/widgets/cards_%20datos.dart';
 import 'package:parctica_educacionlinea/widgets/duracion.dart';
 
 import '../widgets/parte_1_nombre.dart';
@@ -71,15 +72,20 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
-        body: Column(
-          children: [
-            Parte1Nombre(),
-            CardOne(),
-            SizedBox(height: 18,),
-            CardTwo(),
-            SizedBox(height: 18,),
-            Duracion(),
-          ],
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              Parte1Nombre(),
+              CradsDatos(),
+              SizedBox(height: 5,),
+              CardOne(),
+              SizedBox(height: 18,),
+              CardTwo(),
+              SizedBox(height: 18,),
+              Duracion(),
+              SizedBox(height: 10,)
+            ],
+          ),
         ));
   }
 }
